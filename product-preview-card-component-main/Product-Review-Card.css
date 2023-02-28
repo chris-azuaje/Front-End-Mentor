@@ -1,0 +1,223 @@
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 150px;
+}
+
+.image2 {
+    display: none;
+}
+
+.leftSide .image1 {
+    width: 300px;
+    height: auto;
+    /* border-radius: 15px 0 0 15px; */
+}
+
+.rightSide {
+    background-color: white;
+    width: 300px;
+    height: 450px;
+    /* border-radius: 0 15px 15px 0; */
+}
+
+.rightSide .perfume {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 8px;
+    margin: 20px 30px;
+    color: var(--darkGrayishBlue);
+    cursor: default;
+}
+
+.rightSide h1 {
+    font-family: 'Fraunces', sans-serif;
+    margin: 0 30px;
+    padding-right: 60px;
+    cursor: default;
+}
+
+.rightSide .description {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 30px 0px 30px;
+    font-size: 14px;
+    color: var(--darkGrayishBlue);
+    line-height: 20px;
+    padding-right: 40px;
+    cursor: default;
+}
+
+.rightSide .values {
+    font-family: 'Fraunces', sans-serif;
+}
+
+.rightSide .currentValue {
+    font-size: 30px;
+    color: var(--darkCyan);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    cursor: default;
+}
+
+.rightSide .previousValue {
+    font-size: 16px;
+    color: var(--darkGrayishBlue);
+    margin: 27px 0;
+    margin-left: 15px;
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    cursor: default;
+}
+
+.flexItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: var(--darkCyan);
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--darkCyan);
+    border: 2px solid var(--darkCyan);
+}
+
+/* All code below this line is made for 700px screens and below */
+
+@media all and (max-width: 700px) {
+
+    .card {
+        width: 600px;
+        /* height: 450px; */
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .image1 {
+        display: none;
+    }
+
+    .image2 {
+        display: block;
+        width: 400px;
+        height: auto;
+    }
+
+    .rightSide {
+        background-color: white;
+        width: 400px;
+        height: 280px;
+        /* border-radius: 0 15px 15px 0; */
+    }
+
+    .rightSide .perfume {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 8px;
+        margin: 10px 30px;
+        color: var(--darkGrayishBlue);
+        cursor: default;
+    }
+
+    .rightSide h1 {
+        font-family: 'Fraunces', sans-serif;
+        margin: 0 30px;
+        padding-right: 20px;
+        cursor: default;
+    }
+
+    .rightSide .description {
+        font-family: 'Montserrat', sans-serif;
+        margin: 10px 30px 0px 30px;
+        font-size: 14px;
+        color: var(--darkGrayishBlue);
+        line-height: 20px;
+        padding-right: 20px;
+        cursor: default;
+    }
+
+    .rightSide .values {
+        font-family: 'Fraunces', sans-serif;
+    }
+
+    .rightSide .currentValue {
+        font-size: 30px;
+        color: var(--darkCyan);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        cursor: default;
+    }
+
+    .rightSide .previousValue {
+        font-size: 16px;
+        color: var(--darkGrayishBlue);
+        margin: 17px 0;
+        margin-left: 15px;
+        text-decoration: line-through;
+        text-decoration-thickness: 1px;
+        cursor: default;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 90px;
+    }
+
+    button {
+        background-color: var(--darkCyan);
+        border: none;
+        width: 350px;
+        height: 40px;
+        border-radius: 15px;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+}
